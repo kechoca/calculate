@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">คำนวณราคา</string>
+    <string name="price">ตารางราคา/ตัน</string>
+    <string name="txt_cal">ทดลองคำนวณราคา</string>
+    <string name="txt_weight">กรุณาใส่จำนวนตัน</string>
+    <string name="txt_calculat">คำนวณ</string>
+</resources>

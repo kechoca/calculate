@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+            <ImageView
+                android:id="@+id/imgPrice"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/table_price"
+                />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_cal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/fill_box"
+        android:inputType="number"
+        android:textSize="25sp"
+        android:hint="@string/txt_weight"
+        android:maxLength="7"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnCal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_calculat"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:background="@drawable/btn_box"/>
+    <TextView
+        android:id="@+id/txtNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#D30606"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
